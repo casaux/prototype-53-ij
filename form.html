@@ -58,12 +58,12 @@
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="#">myCASA</a></li>
-                     <li>Service name</li>
+                     <li>Flight crew qualifications report request</li>
                   </ul>
                </nav>
 			  <div class="casa-section">
                <header class="au-header" role="banner">
-                  <h1 class="break desktop au-header-heading">Service name</h1>
+                  <h1 class="break desktop au-header-heading">Flight Crew Qualifications Report Request</h1>
                   <a class="au-direction-link" href="javascript:history.back()">
 					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
 					</a>
@@ -73,35 +73,37 @@
         <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
 
-                <h3>Service step name</h3>
-                <!-- the step of the process on this page -->
-
                 <!-- content starts here -->
-                <div class="au-callout">
-                  <p>Some information that is important to highlight</p>
-                </div>
-
-                <p>More general information</p>
+              <!--  <div class="au-callout">
+                  <p>Use this form to obtain one or more of the following reports
+                    <ul>
+                      <li>A confirmation report</li>
+                      <li>A pre-requisite report for Flight Crew Licence qualifications</li>
+                      <li>A replacement of a lost or destroyed Knowledge Deficiency Report (KDR) from sitting an aeronautical knowledge examinationight</li>
+                    </ul>
+                    </p>
+                </div> -->
 
 
                 <!-- form group for radio/checkboxes -->
                 <div class="au-form-group">
                   <fieldset class="au-fieldset">
                       <legend class="au-fieldset__legend">
-                          <h3 class="au-display-sm">What type of aircraft?</h3>
-                          <span class="au-hint-text">This is some help text</span>
+                          <h3 class="au-display-sm">What reports are you requesting?</h3>
+                          <span class="au-hint-text">You may select more than one</span>
                       </legend>
 
                       <div class="au-control-input au-control-input--block">
-                          <input class="au-control-input__input" type="radio" name="assessed-simulator"
-                                     id="assessed-aircraft" value="select-review">
-                              <label class="au-control-input__text" for="assessed-aircraft">Aeroplane</label>
+                        <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="confirmation-report">
+                        <label class="au-control-input__text" for="confirmation-report">Confirmation report - (FCL and current medical details)</label>
                       </div>
-
                       <div class="au-control-input au-control-input--block">
-                          <input class="au-control-input__input" type="radio" name="assessed-simulator"
-                                     id="assessed-simulator" value="select-review-sim">
-                              <label class="au-control-input__text" for="assessed-simulator">Helicopter</label>
+                        <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="pre-requisite-report">
+                        <label class="au-control-input__text" for="pre-requisite-report">Pre-requisite report - (full history of theory exams)</label>
+                      </div>
+                      <div class="au-control-input au-control-input--block">
+                        <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="kdr">
+                        <label class="au-control-input__text" for="kdr">Replacement of <abbr title="Knowledge Deficiency report">KDR</abbr></label>
                       </div>
 
 
@@ -109,38 +111,49 @@
                   </fieldset>
                   </div>
 
-
-
-                  <!-- form group for text and other input -->
                   <div class="au-form-group">
-                    <label class="au-label" for="name">Text input</label>
-                    <span class="au-hint-text">Please enter some text</span>
-                    <input type="text" class="au-text-input au-text-input--block" id="name"/>
-                 </div>
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm"> List the required <abbr title="Knowledge Deficiency report">KDR</abbr> exam code(s)</h3>
+                            <span class="au-hint-text">You may select more than one</span>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                          <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="RPL-A">
+                          <label class="au-control-input__text" for="RPL-A"><abbr title="Recreational Pilot Licence - Aeroplane">RPL-A</abbr></label>
+                        </div>
+                        <div class="au-control-input au-control-input--block">
+                          <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="RPL-H">
+                          <label class="au-control-input__text" for="RPL-H"><abbr title="Recreational Pilot Licence - Helicopter">RPL-H</abbr></label>
+                        </div>
+                        <div class="au-control-input au-control-input--block">
+                          <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="PPL-A">
+                          <label class="au-control-input__text" for="PPL-A"><abbr title="Private Pilot Licence - Aeroplane">PPL-A</abbr></label>
+                        </div>
+                        <div class="au-control-input au-control-input--block">
+                          <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="PPL-H">
+                          <label class="au-control-input__text" for="PPL-H"><abbr title="Private Pilot Licence - Helicopter">PPL-H</abbr></label>
+                        </div>
+                        <div class="au-control-input au-control-input--block">
+                          <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="CPL">
+                          <label class="au-control-input__text" for="CPL"><abbr title="Commercial Pilot Licence">CPL</abbr></label>
+                        </div>
+                        <div class="au-control-input au-control-input--block">
+                          <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="ATPL">
+                          <label class="au-control-input__text" for="ATPL"><abbr title="Air Transport Pilot Licence">ATPL</abbr></label>
+                        </div>
+                        <div class="au-control-input au-control-input--block">
+                          <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="Ratings">
+                          <label class="au-control-input__text" for="Ratings">Ratings</label>
+                        </div>
+
+
+                    </fieldset>
+                    </div>
 
 
 
                 <!-- content ends here -->
-
-                <!-- declaration  button  -->
-
-                <div class="au-callout casa-declaration">
-                   		<h3>Declaration</h3>
-
-                      <p>I hereby certify that all statements in this application are true and correct in every particular and that I have read
-     and understood all regulatory references included in this application. I consent to CASA using and disclosing
-     my personal information in accordance with CASA’s privacy policy including exchanging the information with
-     Commonwealth, State and Territory government agencies (see CASA’s Privacy Policy ). I acknowledge that to knowingly make a false or
-     misleading statement is an offence against the Criminal Code Act 1995 (Cth).</p>
-  		                <p>
-            					<label class="au-control-input">
-            					<input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="declaration">
-            						<span class="au-control-input__text form-text p-t-0">
-            							I agree and understand the above conditions</span>
-            						</label>
-                      </p>
-              </div>
-
 
 
 
